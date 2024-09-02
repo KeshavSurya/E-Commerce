@@ -1,0 +1,409 @@
+.bi-cart{
+    position: relative;
+}
+.bi-cart .badge{
+    position: absolute;
+    left: 12px;
+    top: -5px;
+}
+
+.article{
+    margin: 10px 0px;
+}
+.article-text{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.women-fashion{
+    background-image: url("../images/cover-1.jpg");
+    background-size:cover;
+}
+
+.men-fashion{
+    background-image: url("../images/cover-2.jpg");
+    background-size: cover;
+}
+
+.kids-fashion{
+    background-image: url("../images/cover-3.jpg");
+    background-size: cover;
+}
+
+main .title{
+    font-size: 40px;
+    margin-top: 85px;
+    font-weight: bold;
+    color: white;
+}
+
+main button{
+    width: 180px;
+    height: 55px;
+    border: none;   
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+
+.feature-part div:first-child{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.feature-part div:nth-child(2){
+    font-size: 13px;
+    color: grey;
+
+}
+
+.bag-collection{
+    background-image: url("../images/product-1.jpg");
+    background-size: cover;
+}
+.printed-shirts{
+    background-image: url("../images/product-2.jpg");
+    background-size: cover;
+}
+
+.printed-shirts{
+    position: relative;
+}
+
+.discount{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #ff5703;
+    border-radius: 100px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount .save{
+    font-size: 14px;
+}
+
+.discount .percent{
+    font-size: 25px;
+}
+
+.women-dresses{
+    background-image: url("../images/product-3.jpg");
+    background-size: cover;
+}
+
+.sweatshirts{
+    background-image: url("../images/product-4.jpg");
+    background-size: cover;
+}
+
+@media screen and (orientation:landscape){
+    header{
+        padding: 25px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main{
+        height: 450px;
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+    }
+    
+    .features{
+        padding: 10px 60px 10px 60px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        justify-items: center;
+    }
+
+    .line{
+        height: 1px;
+        background-color:rgb(198, 198, 198);
+        width: 80%;
+        margin: 10px auto;  
+    }
+
+    .new{
+        font-size: 14px;
+        color: grey;
+    }
+    .best{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .desc{
+        color: grey;
+        width: 50%;
+    }
+
+    .products{
+        padding: 20px 60px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        grid-gap: 25px;
+    }
+
+    .bag-collection .centered-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .bag-collection .bag{
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .bag-collection .shop{
+        font-size: 18px;
+        margin-top: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .printed-shirts .left-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-left: 40px;
+    }
+    .printed-shirts .printed{
+        font-size: 28px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .printed-shirts .shop{
+        font-size: 18px;
+        margin-top: 10px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .products-2{
+        padding: 0px 60px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        grid-gap: 25px;
+    }
+
+    .women-dresses .left-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-left: 40px;
+    }
+    .women-dresses .printed{
+        font-size: 28px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .women-dresses .shop{
+        font-size: 18px;
+        margin-top: 10px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .sweatshirts .centered-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .sweatshirts .bag{
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .sweatshirts .shop{
+        font-size: 18px;
+        margin-top: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .cards-section{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-gap: 40px;
+        padding: 20px 60px;
+    }
+
+    .card{
+        border: none;
+    }
+
+
+
+    
+
+    
+
+}
+
+@media screen and (orientation:portrait) {
+    main {
+        height: 450px;
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+
+    .men-fashion{
+        display: none;
+    }
+
+    .kids-fashion{
+        display: none;
+    }
+
+    .features{
+        padding: 10px 60px 10px 30px;
+        display: grid;
+        grid-template-columns: 12fr;
+        justify-items: left;
+    }
+
+    .feature{
+        margin-bottom: 20px;
+    }
+
+    .line{
+        height: 1px;
+        background-color:rgb(198, 198, 198); 
+    }
+
+    .new{
+        font-size: 14px;
+        color: grey;
+    }
+    .best{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .desc{
+        color: grey;
+    }
+
+    .products{
+        padding: 20px 40px;
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-gap: 25px;
+    }
+
+    .image{
+        height: 400px;
+    }
+
+    .bag-collection .centered-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .bag-collection .bag{
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .bag-collection .shop{
+        font-size: 18px;
+        margin-top: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .printed-shirts .centered-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .printed-shirts .printed{
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .printed-shirts .shop{
+        font-size: 14px;
+        margin-top: 10px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .products-2{
+        padding: 20px 40px;
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-gap: 25px;
+    }
+
+    .women-dresses .centered-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .women-dresses .printed{
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .women-dresses .shop{
+        font-size: 14px;
+        margin-top: 10px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .sweatshirts .centered-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .sweatshirts .bag{
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .sweatshirts .shop{
+        font-size: 18px;
+        margin-top: 10px;
+        color: white;
+        font-weight: bold;
+    }
+}

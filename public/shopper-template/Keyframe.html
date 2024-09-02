@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+        .spinner{
+            background-color: rgb(26, 26, 26);
+            height: 300px;
+            padding:auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .spinner:nth-child(even){
+            background-color: rgb(42, 42, 42);
+        }
+        .loader1{
+            width: 50px;
+            height: 50px;
+            border-left: 5px solid rgb(255, 255, 255);
+            border-top: 5px solid rgb(255, 255, 255);
+            border-right: 5px solid rgb(255, 255, 255);
+            border-bottom: 5px solid transparent;
+            border-radius: 50px;
+            animation-name: Rotate;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .loader2{
+            width: 50px;
+            height: 50px;
+            border-left: 5px solid rgb(255, 255, 255);
+            border-top: 5px solid rgb(255, 255, 255);
+            border-right: 5px solid rgb(255, 255, 255);
+            border-bottom: 5px solid red;
+            border-radius: 50px;
+            animation-name: Rotate;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .loader3{
+            width: 50px;
+            height: 50px;
+            border: 5px solid white;
+            border-radius: 50%;
+            position: relative;
+            animation: Rotate 1s linear infinite;
+        }
+
+        .loader3::after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-bottom-color: red;
+
+        }
+
+
+        .loader4{
+            width: 50px;
+            height: 50px;
+            border: 5px solid white;
+            border-radius: 50%;
+            position: relative;
+            animation: Rotate 1s linear infinite;
+        }
+
+        .loader4::after{
+            content: '';
+            position: absolute;
+            width: 68px;
+            height: 68px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 3px solid transparent;
+            border-bottom-color:red ;
+            border-top-color:red ;
+            border-radius: 50%;
+        }
+
+        @keyframes Rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner">
+        <div class="loader1"></div>
+    </div>
+    <div class="spinner">
+        <div class="loader2"></div>
+    </div>
+    <div class="spinner">
+        <div class="loader3"></div>
+    </div>
+    <div class="spinner">
+        <div class="loader4"></div>
+    </div>
+</body>
+</html>
